@@ -26,8 +26,14 @@ class WelcomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Center(
-                    child: Image.asset('assets/images/Logo3.png'),
+                  const Text(
+                    "Health Tracking",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   const SizedBox(height: 50),
                   const Text(
@@ -35,7 +41,7 @@ class WelcomeScreen extends StatelessWidget {
                     textAlign: TextAlign.center,
                     // ignore: unnecessary_const
                     style: const TextStyle(
-                      color: Colors.amber,
+                      color: Colors.black87,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
