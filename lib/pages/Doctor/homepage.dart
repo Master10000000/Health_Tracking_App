@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:health_tracking_app/main.dart';
 import 'package:health_tracking_app/pages/Doctor/navigationDrawer.dart';
 
-class AppBarPage extends StatelessWidget {
+class DoctorHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,28 +37,28 @@ class AppBarPage extends StatelessWidget {
         ),
         actions: [
           TextButton(
-            child: Text(
+            child: const Text(
               "Appointments",
               style: TextStyle(color: Colors.white),
             ),
             onPressed: () {},
           ),
           TextButton(
-            child: Text(
-              "Daily plan",
+            child: const Text(
+              "Patients",
               style: TextStyle(color: Colors.white),
             ),
             onPressed: () {},
           ),
           TextButton(
-            child: Text(
+            child: const Text(
               "Info",
               style: TextStyle(color: Colors.white),
             ),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(Icons.person),
+            icon: const Icon(Icons.person),
             onPressed: () {},
           )
         ],

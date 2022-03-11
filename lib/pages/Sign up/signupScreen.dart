@@ -28,69 +28,93 @@ class SignupPage extends StatelessWidget {
             ),
             Center(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   Text(
                     "Sign up",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
-                  SizedBox(height: size.height * 0.03),
-                  SvgPicture.asset(
-                    "assets/icons/signup.svg",
-                    height: size.height * 0.35,
-                  ),
                   RoundedInputField(
-                    hintText: "Your Email",
+                    hintText: "Email...",
                     onChanged: (value) {},
                   ),
                   RoundedPasswordField(
                     onChanged: (value) {},
                   ),
-                  FlatButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) {
-                              return LoginPage();
-                            },
-                          ),
-                        );
-                      },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      color: AppColors.MAIN_COLOR,
-                      padding: const EdgeInsets.all(25),
-                      child: const Text(
-                        "Sumbit",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
-                      )),
-                  SizedBox(height: 40),
-                  FlatButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) {
-                              return WelcomeScreen();
-                            },
-                          ),
-                        );
-                      },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      color: AppColors.MAIN_COLOR,
-                      padding: const EdgeInsets.all(25),
-                      child: const Text(
-                        "Cancel",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
-                      )),
+                  RoundedInputField(
+                    hintText: "Name...",
+                    onChanged: (value) {},
+                  ),
+                  RoundedInputField(
+                    hintText: "Surname...",
+                    onChanged: (value) {},
+                  ),
+                  RoundedInputField(
+                    hintText: "Health Number...",
+                    onChanged: (value) {},
+                  ),
+                  RoundedInputField(
+                    hintText: "Phone number...",
+                    onChanged: (value) {},
+                  ),
+                  RoundedInputField(
+                    hintText: "ZIP Code...",
+                    onChanged: (value) {},
+                  ),
+                  RoundedInputField(
+                    hintText: "Address...",
+                    onChanged: (value) {},
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      FlatButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return LoginPage();
+                                },
+                              ),
+                            );
+                          },
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50)),
+                          color: AppColors.MAIN_COLOR,
+                          padding: const EdgeInsets.all(25),
+                          child: const Text(
+                            "Sumbit",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      SizedBox(height: 40),
+                      FlatButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return WelcomeScreen();
+                                },
+                              ),
+                            );
+                          },
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50)),
+                          color: AppColors.MAIN_COLOR,
+                          padding: const EdgeInsets.all(25),
+                          child: const Text(
+                            "Cancel",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold),
+                          )),
+                    ],
+                  ),
                   SizedBox(height: 50),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -108,7 +132,7 @@ class SignupPage extends StatelessWidget {
                         press: () {},
                       ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
