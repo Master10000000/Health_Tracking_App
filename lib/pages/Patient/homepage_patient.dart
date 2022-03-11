@@ -7,7 +7,7 @@ import 'package:health_tracking_app/main.dart';
 import 'package:health_tracking_app/pages/Patient/dailyplan.dart';
 import 'package:health_tracking_app/pages/Patient/navigationDrawer_patient.dart';
 import 'package:health_tracking_app/pages/Patient/profile.dart';
-import 'package:health_tracking_app/pages/info.dart';
+import 'package:health_tracking_app/pages/Patient/info_patient.dart';
 
 class PatientHomePage extends StatelessWidget {
   @override

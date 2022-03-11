@@ -77,6 +77,13 @@ class Profile extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
+              Title(
+                  color: Colors.white,
+                  child: Text(
+                    "Personal Data",
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  )),
               const ListTile(
                   leading: const Icon(Icons.monitor_weight),
                   title: Text("Weight")),
@@ -94,6 +101,13 @@ class Profile extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
+              Title(
+                  color: Colors.white,
+                  child: Text(
+                    "Connected with Smart Watch",
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  )),
               const ListTile(
                   leading: const Icon(Icons.do_not_step), title: Text("Steps")),
               const Divider(height: 12),

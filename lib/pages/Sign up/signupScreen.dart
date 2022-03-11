@@ -20,11 +20,8 @@ class SignupPage extends StatelessWidget {
         child: Stack(
           children: [
             Positioned.fill(
-              child: Opacity(
-                opacity: 0.7,
-                child: Image.asset('assets/images/backround.jpg',
-                    fit: BoxFit.cover),
-              ),
+              child:
+                  Image.asset('assets/images/backround.jpg', fit: BoxFit.cover),
             ),
             Center(
               child: Column(

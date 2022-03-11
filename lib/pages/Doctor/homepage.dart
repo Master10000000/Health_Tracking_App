@@ -2,7 +2,9 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:health_tracking_app/main.dart';
+import 'package:health_tracking_app/pages/Doctor/doctorprofile.dart';
 import 'package:health_tracking_app/pages/Doctor/navigationDrawer.dart';
+import 'package:health_tracking_app/pages/Doctor/info.dart';
 
 class DoctorHomePage extends StatelessWidget {
   @override
@@ -12,11 +14,8 @@ class DoctorHomePage extends StatelessWidget {
         color: Colors.white,
         child: Stack(children: [
           Positioned.fill(
-            child: Opacity(
-              opacity: 0.7,
-              child:
-                  Image.asset('assets/images/backround.jpg', fit: BoxFit.cover),
-            ),
+            child:
+                Image.asset('assets/images/backround.jpg', fit: BoxFit.cover),
           ),
         ]),
       ),
@@ -55,11 +54,29 @@ class DoctorHomePage extends StatelessWidget {
               "Info",
               style: TextStyle(color: Colors.white),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return InfoPage();
+                  },
+                ),
+              );
+            },
           ),
           IconButton(
             icon: const Icon(Icons.person),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return DoctorProfile();
+                  },
+                ),
+              );
+            },
           )
         ],
       ),

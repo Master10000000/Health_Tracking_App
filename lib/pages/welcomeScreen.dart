@@ -15,11 +15,8 @@ class WelcomeScreen extends StatelessWidget {
         child: Stack(
           children: [
             Positioned.fill(
-              child: Opacity(
-                opacity: 0.7,
-                child: Image.asset('assets/images/backround.jpg',
-                    fit: BoxFit.cover),
-              ),
+              child:
+                  Image.asset('assets/images/backround.jpg', fit: BoxFit.cover),
             ),
             Center(
               child: Column(
@@ -31,7 +28,7 @@ class WelcomeScreen extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 30,
+                      fontSize: 40,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
