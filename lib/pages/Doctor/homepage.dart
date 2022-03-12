@@ -5,6 +5,7 @@ import 'package:health_tracking_app/main.dart';
 import 'package:health_tracking_app/pages/Doctor/doctorprofile.dart';
 import 'package:health_tracking_app/pages/Doctor/navigationDrawer.dart';
 import 'package:health_tracking_app/pages/Doctor/info.dart';
+import 'package:health_tracking_app/pages/Doctor/patients.dart';
 
 class DoctorHomePage extends StatelessWidget {
   @override
@@ -47,7 +48,16 @@ class DoctorHomePage extends StatelessWidget {
               "Patients",
               style: TextStyle(color: Colors.white),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return PatientsPage();
+                  },
+                ),
+              );
+            },
           ),
           TextButton(
             child: const Text(

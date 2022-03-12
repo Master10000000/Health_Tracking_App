@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:health_tracking_app/helpers/appcolors.dart';
 import 'package:health_tracking_app/main.dart';
 import 'package:health_tracking_app/pages/Doctor/homepage.dart';
+import 'package:health_tracking_app/pages/Doctor/info.dart';
 import 'package:health_tracking_app/pages/Patient/dailyplan.dart';
 import 'package:health_tracking_app/pages/Patient/homepage_patient.dart';
+import 'package:health_tracking_app/pages/Patient/medicaltests.dart';
 import 'package:health_tracking_app/pages/Patient/profile.dart';
 import 'package:health_tracking_app/pages/welcomeScreen.dart';
 
@@ -72,7 +74,7 @@ class NavigationDrawerPatient extends StatelessWidget {
           children: [
             ListTile(
               leading: const Icon(Icons.home_outlined),
-              title: Text("Home"),
+              title: const Text("Home"),
               onTap: () => Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => PatientHomePage())),
             ),
@@ -100,13 +102,15 @@ class NavigationDrawerPatient extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.medical_services),
               title: const Text("Medical Tests"),
-              onTap: () {},
+              onTap: () => Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => MedicalTestPage())),
             ),
             const Divider(color: Colors.black54),
             ListTile(
               leading: const Icon(Icons.info),
               title: const Text("Info"),
-              onTap: () {},
+              onTap: () => Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => InfoPage())),
             ),
             ListTile(
               leading: const Icon(Icons.logout),

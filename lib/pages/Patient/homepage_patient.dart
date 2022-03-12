@@ -37,14 +37,14 @@ class PatientHomePage extends StatelessWidget {
           },
         ),
         actions: [
-          FlatButton(
+          TextButton(
             child: const Text(
               "Appointments",
               style: TextStyle(color: Colors.white),
             ),
             onPressed: () {},
           ),
-          FlatButton(
+          TextButton(
             child: const Text(
               "Daily plan",
               style: TextStyle(color: Colors.white),
@@ -60,7 +60,7 @@ class PatientHomePage extends StatelessWidget {
               );
             },
           ),
-          FlatButton(
+          TextButton(
             child: const Text(
               "Info",
               style: TextStyle(color: Colors.white),

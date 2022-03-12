@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:health_tracking_app/helpers/appcolors.dart';
 import 'package:health_tracking_app/main.dart';
 import 'package:health_tracking_app/pages/Doctor/homepage.dart';
+import 'package:health_tracking_app/pages/Doctor/info.dart';
+import 'package:health_tracking_app/pages/Doctor/patients.dart';
 import 'package:health_tracking_app/pages/welcomeScreen.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -74,13 +76,15 @@ class NavigationDrawer extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.sick_outlined),
               title: const Text("Patients"),
-              onTap: () {},
+              onTap: () => Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => PatientsPage())),
             ),
             const Divider(color: Colors.black54),
             ListTile(
               leading: const Icon(Icons.info),
               title: const Text("Info"),
-              onTap: () {},
+              onTap: () => Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => InfoPage())),
             ),
             ListTile(
               leading: const Icon(Icons.logout),
